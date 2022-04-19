@@ -1,0 +1,102 @@
+# Ignore
+.history
+.vscode
+backup
+ChooseLink
+crawl
+data
+common_files
+hrm-laravel
+partner_new
+partner_new - Copy
+partner_sorimachi
+php-mvc
+QLnhansu-master
+test
+test_seminar
+Unitest
+wordpress-seo-premium-14.4.1
+www_sorimachi
+demo_php
+Contain1/member
+*.rar
+*.zip
+logs/
+*BK*
+*Copy*
+images/
+mag
+vendor
+*.gif
+*.png
+*.jpg
+*.csv
+*.svg
+*.sql
+*.html
+*.pdf
+*.xlsx
+*.exe
+*.jar
+staff/wp-content/themes/twenty*
+# staff/wp-content/themes/twentytwenty
+# staff/wp-content/themes/twentytwentyone
+# staff/wp-content/themes/twentytwentytwo
+
+member/wp-content/languages
+
+!member/wp-content/themes
+member/wp-content/themes/*/
+!member/wp-content/themes/SSKCloud_Deisgn_theme/
+
+# autoload
+autoload/php-webdriver/*
+!autoload/php-webdriver/
+autoload/php-webdriver/*
+!autoload/php-webdriver/php-mvc-master/
+
+# config WP 
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+wp-admin/
+wp-content/index.php
+wp-content/languages/*
+wp-content/plugins/index.php
+wp-content/themes/index.php
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-*.php
+xmlrpc.php
+
+# Configuration
+# wp-config.php
+
+# Example themes
+wp-content/themes/twenty*
+
+# Example plugin
+wp-content/plugins
+plugins
+
+# Uploads
+wp-content/uploads/
+
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes

@@ -1,0 +1,88 @@
+<?php
+require_once __DIR__ . '/../model/M_shokokai.class.php';
+// require_once __DIR__ . '/../view/V_shokokai.class.php';
+$model = new M_content;
+// $view = new V_content;
+
+//check data from ajax
+foreach ($_POST as $key => $value) {
+	if ($value == "error") {
+		echo json_encode(['errMsg' => 'Error']);
+		return;
+	}
+}
+
+//get param
+if(in_array($_POST['action'],['add','edit'])){
+	$param = [
+		'flagContent'         => (int) $_POST['flagContent'],
+		'cateContent' 		  => (int) $_POST['cateContent'],
+		'shortTittleContent'  => $_POST['shortTittleContent'],
+		'longTittleContent'   => $_POST['longTittleContent'],
+		'notifyContent'	 	  => $_POST['notifyContent'],
+
+		'alertContent'	 	  => empty($_POST['alertContent']) ? null : $_POST['alertContent'],
+		'commentContent'	  => empty($_POST['commentContent']) ? null : $_POST['commentContent'],
+		'linkContent'  		  => $_POST['linkContent'],
+		'seperateContent'     => empty($_POST['seperateContent']) ? null : (int)$_POST['seperateContent'],
+		'image2Content'  	  => empty($_POST['image2Content']) ? null : $_POST['image2Content'],
+
+		'topContent'  		  => empty($_POST['topContent']) ? null : (int)$_POST['topContent'],
+		'freeContent'  		  => empty($_POST['freeContent']) ? null : $_POST['freeContent'],
+		'account9Content'  	  => empty($_POST['account9Content']) ? null : $_POST['account9Content'],
+		'account10Content'    => empty($_POST['account10Content']) ? null : $_POST['account10Content'],
+		'account11Content'    => empty($_POST['account11Content']) ? null : $_POST['account11Content'],
+
+		'JA9Content'  	 	  => empty($_POST['JA9Content']) ? null : $_POST['JA9Content'],
+		'JA10Content'   	  => empty($_POST['JA10Content']) ? null : $_POST['JA10Content'],
+		'JA11Content'   	  => empty($_POST['JA11Content']) ? null : $_POST['JA11Content'],
+		'JAContent'  		  => empty($_POST['JAContent']) ? null : $_POST['JAContent'],
+		'diary6Content'  	  => empty($_POST['diary6Content']) ? null : $_POST['diary6Content'],
+		'diary6PContent'  	  => empty($_POST['diary6PContent']) ? null : $_POST['diary6PContent']
+	];
+}
+
+
+switch ($_POST['action']) {
+	case 'loadById':
+		
+		// if ( preg_match( '/^(\s|\D)*$/', $_POST['schId'] ) ) {
+		// 	echo json_encode( ['errMsg' => 'Error id'] );
+		// 	return;
+		// }
+		$result = $model->getById(intval($_POST["id"]));
+		echo json_encode($result);
+		break;
+
+	case 'add':
+		// header('Content-Type: application/json');
+		http_response_code(200);
+		$result = $model->add($param);
+		echo json_encode($param);
+		break;
+
+	case 'edit':
+		header('Content-Type: application/json');
+		// if ( preg_match( '/^(\s|\D)*$/', $_POST['flagContent'] )
+		// || preg_match( '/^(\s|\D)*$/', $_POST['cateContent'] ) ) {
+		// 	echo json_encode( ['errMsg' => 'Error id'] );
+		// 	return;
+		// }
+
+		$param['id'] = (int)$_POST['image1Content'];
+		$result = $model->edit($param);
+
+		http_response_code(200);
+		echo json_encode($param);
+		break;
+
+	case 'delete':
+		http_response_code(200);
+		$result = $model->delete((int)$_POST["id"]);
+		
+		// $show = $view->loadList($model->getList());
+		// echo $result;
+		echo json_encode ('success');
+
+		break;
+}

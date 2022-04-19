@@ -1,0 +1,183 @@
+/*
+ Author: Khanh Dinh
+*/
+
+/* datatable */
+#table_idTest_wrapper {
+	background-color: #f3f4ed;
+}
+
+table#table_idTest tr td .button_crud{
+	vertical-align: middle;
+	/* word-wrap: break-word; */
+	text-align: center;
+}
+
+table tr td.sorting_1{
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+/* table#table_idTest tr th {
+	height: 10px !important;
+} */
+
+p.contentSe1{
+	height: 5px !important;
+}
+
+#table_idTest_filter, .dataTables_length{
+	height: 70px;
+}
+
+/* .dataTables_scrollHead{
+	display: flex;
+	height: 40px;
+	align-items: center;
+} */
+
+table.display.dataTable.no-footer tr th{
+	background-color: rgb(22, 212, 149);
+}
+
+/* datatable */
+
+/* loggout */
+.buttonLog {
+  /* background-color: #4CAF50; Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+  /* Safari */
+	transition-duration: 0.4s;
+}
+.buttonLog:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+/* loggout */
+
+/* modal */	
+.modal-dialog {
+	min-height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: auto;
+}
+/* modal */	
+
+/* list error */
+.error.error_inline0 {
+	font-size: 140%;
+	display: inline-block;
+	text-align: left;
+}
+
+/* remove icon arow input type number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#main .boxStyle02 .contentCon .btn-primary.nav{
+	margin-right: 10px;
+}
+
+/* header */
+#header .header-top .header2{
+	font-weight: bold;
+}
+
+/* css back to top */
+#scrolltop {
+	display: inline-block;
+	background-color: #FF9800;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s,
+		opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+#scrolltop::after {
+	content: "\f077";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
+}
+
+#scrolltop:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+
+#scrolltop:active {
+	background-color: #555;
+}
+
+#scrolltop.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.btn.btn-primary.nav{
+	/* margin-right: 30px; */
+}
+
+/* hide search datatable */
+#table_idTest_filter{
+	display: none;
+}
+
+.searchCon{
+	display: flex;
+	flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    top: 40px;
+	left: 420px;	
+	height: 70px;
+	justify-content: center;
+}
+/* for firefox */
+@-moz-document url-prefix() {
+	.searchCon{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		z-index: 100;
+		top: 40px;
+		left:330px;
+		height: 70px;
+		justify-content: center;
+	}
+}
+
+/* change color column sort */
+.dataTables_wrapper .dataTables_length select{
+	background-color: #ffffff !important;
+}
+#table_idTest_length{
+	display: flex;
+	align-items: center;
+}

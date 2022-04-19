@@ -1,0 +1,133 @@
+@charset "utf-8";
+/*-----------------------------------------------------
+ common style font-size
+-----------------------------------------------------*/
+
+.fs1 { font-size: 80%; }
+.fs2 { font-size: 90%; }
+.fs3 { font-size: 110%; }
+.fs4 { font-size: 140%; }
+.fs5 { font-size: 220%; }
+
+/*-----------------------------------------------------
+ common style font-weight
+-----------------------------------------------------*/
+
+.fw1 { font-family: "Noto Sans Japanese", sans-serif; font-weight: 600; }
+
+/*-----------------------------------------------------
+ common style txt_img aline
+-----------------------------------------------------*/
+
+.txt_left { text-align: left; }
+.txt_cent { text-align: center; }
+.txt_right { text-align: right; }
+.img_cent { text-align: center; display:block; margin:auto; }
+.img_right { display:block;margin-left:auto; }
+
+/*-----------------------------------------------------
+ common style margin & padding
+-----------------------------------------------------*/
+
+.marB5 { margin-bottom: 5px; }
+.marB10 { margin-bottom: 10px; }
+.marB15 { margin-bottom: 15px; }
+.marB20 { margin-bottom: 20px; }
+.marB25 { margin-bottom: 25px; }
+.marB30 { margin-bottom: 30px; }
+.marB35 { margin-bottom: 35px; }
+.marB50 { margin-bottom: 50px; }
+
+.marT5 { margin-top: 5px; }
+.marT10 { margin-top: 10px; }
+.marT15 { margin-top: 15px; }
+.marT20 { margin-top: 20px; }
+.marT25 { margin-top: 25px; }
+.marT30 { margin-top: 30px; }
+.marT35 { margin-top: 35px; }
+.marT45 { margin-top: 45px; }
+
+.marL5 { margin-left: 5px; }
+.marL10 { margin-left: 10px; }
+.marL15 { margin-left: 15px; }
+.marL20 { margin-left: 20px; }
+.marL25 { margin-left: 25px; }
+.marL30 { margin-left: 30px; }
+.marL35 { margin-left: 35px; }
+
+.marR5 { margin-right: 5px; }
+.marR10 { margin-right: 10px; }
+.marR15 { margin-right: 15px; }
+.marR20 { margin-right: 20px; }
+.marR25 { margin-right: 25px; }
+.marR30 { margin-right: 30px; }
+.marR35 { margin-right: 35px; }
+
+.padT5 { padding-top: 5px; }
+.padT10 { padding-top: 10px; }
+.padT15 { padding-top: 15px; }
+.padT20 { padding-top: 20px; }
+.padT25 { padding-top: 25px; }
+.padT30 { padding-top: 30px; }
+.padT35 { padding-top: 35px; }
+
+.padB5 { padding-bottom: 5px; }
+.padB10 { padding-bottom: 10px; }
+.padB15 { padding-bottom: 15px; }
+.padB20 { padding-bottom: 20px; }
+.padB25 { padding-bottom: 25px; }
+.padB30 { padding-bottom: 30px; }
+.padB35 { padding-bottom: 35px; }
+.padB50 { padding-bottom: 50px; }
+
+/*-----------------------------------------------------
+ common style width
+-----------------------------------------------------*/
+
+.w20 { width:20px; }
+
+.w60 { width:60px; }
+.w80 { width:80%; }
+.w100 { width:100px; }
+.w120 { width:120px; }
+.w200 { width:200px; }
+.w300 { width:300px; }
+.w455 { width:455px; }
+
+/*-----------------------------------------------------
+ img
+-----------------------------------------------------*/
+.max80{ max-width:80%; }
+
+/*-----------------------------------------------------
+Link Button
+-----------------------------------------------------*/
+.linkpdf a {
+	background: url(../img/icon_pdf.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkmail a {
+	background: url(../img/icon_mail.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkie a {
+	background: url(../img/icon_ie.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkword a {
+	background: url(../img/icon_word.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkxls a {
+	background: url(../img/icon_excel.gif) no-repeat left 1px;
+	padding-left: 20px;
+	margin-left: 5px;
+}

@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  height: 60px;
+  display: table-cell; /* IE8から使用可能 */
+  vertical-align: middle;
+}
+
+a.btn--s_btn {
+  color: #fff;
+  background-color: #eb6100;
+}
+
+a.btn--s_btn:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn-c {
+  font-size: 2rem;
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+}
+
+a.btn-c i.fa {
+  margin-right: 1rem;
+}
+
+a.btn--s_btn {
+	color: #3C2D72;
+	background-color: #FFFFFF;
+}
+
+a.btn--s_btn:hover {
+	color: #fff;
+	background-color: #2F2253;
+}
+
+a.btn--s_btn2 {
+	color: #666;
+	background-color: #333333;
+}
+
+a.btn-c {
+  font-size: 1.5rem;
+  line-height:1.3;
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+	height: 60px;
+	width: 240px;
+}
+
+a.btn-c i.fa {
+  margin-right: 1rem;
+}
+
+a.btn-c:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.6rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - .8rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: '\f054';
+}
+
+a.disabled{
+    pointer-events: none;
+}
+
+img.alignright { display: block; margin: 0 0 0 auto!important;}
+img.alignleft { display: block; margin: 0 auto 0 0!important;}
+img.aligncenter { display: block; margin: 0 auto!important;}
+
+/*-----------------------------------------------------
+ common style font-size
+-----------------------------------------------------*/
+
+.fs1 { font-size: 80%; }
+.fs2 { font-size: 90%; }
+.fs3 { font-size: 110%; }
+.fs4 { font-size: 140%; }
+.fs5 { font-size: 220%; }
+
+/*-----------------------------------------------------
+ common style font-weight
+-----------------------------------------------------*/
+
+.fw1 { font-family: "Noto Sans Japanese", sans-serif; font-weight: 600; }
+
+/*-----------------------------------------------------
+ common style txt_img aline
+-----------------------------------------------------*/
+
+.txt_left { text-align: left; }
+.txt_cent { text-align: center; }
+.txt_right { text-align: right; }
+.img_cent { text-align: center; display:block; margin:auto; }
+.img_right { display:block;margin-left:auto; }
+
+/*-----------------------------------------------------
+ common style margin & padding
+-----------------------------------------------------*/
+
+.marB5 { margin-bottom: 5px; }
+.marB10 { margin-bottom: 10px; }
+.marB15 { margin-bottom: 15px; }
+.marB20 { margin-bottom: 20px; }
+.marB25 { margin-bottom: 25px; }
+.marB30 { margin-bottom: 30px; }
+.marB35 { margin-bottom: 35px; }
+.marB50 { margin-bottom: 50px; }
+
+.marT5 { margin-top: 5px; }
+.marT10 { margin-top: 10px; }
+.marT15 { margin-top: 15px; }
+.marT20 { margin-top: 20px; }
+.marT25 { margin-top: 25px; }
+.marT30 { margin-top: 30px; }
+.marT35 { margin-top: 35px; }
+.marT45 { margin-top: 45px; }
+
+.marL5 { margin-left: 5px; }
+.marL10 { margin-left: 10px; }
+.marL15 { margin-left: 15px; }
+.marL20 { margin-left: 20px; }
+.marL25 { margin-left: 25px; }
+.marL30 { margin-left: 30px; }
+.marL35 { margin-left: 35px; }
+
+.marR5 { margin-right: 5px; }
+.marR10 { margin-right: 10px; }
+.marR15 { margin-right: 15px; }
+.marR20 { margin-right: 20px; }
+.marR25 { margin-right: 25px; }
+.marR30 { margin-right: 30px; }
+.marR35 { margin-right: 35px; }
+
+.padT5 { padding-top: 5px; }
+.padT10 { padding-top: 10px; }
+.padT15 { padding-top: 15px; }
+.padT20 { padding-top: 20px; }
+.padT25 { padding-top: 25px; }
+.padT30 { padding-top: 30px; }
+.padT35 { padding-top: 35px; }
+
+.padB5 { padding-bottom: 5px; }
+.padB10 { padding-bottom: 10px; }
+.padB15 { padding-bottom: 15px; }
+.padB20 { padding-bottom: 20px; }
+.padB25 { padding-bottom: 25px; }
+.padB30 { padding-bottom: 30px; }
+.padB35 { padding-bottom: 35px; }
+.padB50 { padding-bottom: 50px; }
+
+/*-----------------------------------------------------
+ common style width
+-----------------------------------------------------*/
+
+.w20 { width:20px; }
+.w40 { width:40px; }
+.w60 { width:60px; }
+.w80 { width:80%; }
+.w100 { width:100px; }
+.w120 { width:120px; }
+.w200 { width:200px; }
+.w300 { width:300px; }
+.w455 { width:455px; }
+
+/*-----------------------------------------------------
+ img
+-----------------------------------------------------*/
+.max80{ max-width:80%; }
+
+/*-----------------------------------------------------
+Link Button
+-----------------------------------------------------*/
+.linkpdf a {
+	background: url(../img/icon_pdf.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkmail a {
+	background: url(../img/icon_mail.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkie a {
+	background: url(../img/icon_ie.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkword a {
+	background: url(../img/icon_word.gif) no-repeat left center;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+.linkxls a {
+	background: url(../img/icon_excel.gif) no-repeat left 1px;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+/*-----------------------------------------------------
+ color
+-----------------------------------------------------*/
+.url_none {
+	color: #CCC;
+}
+
+.url_none_p {
+	color: #4F3D83;
+}
+
+.btnOver_b {
+	text-align: center;
+	font-family: "Noto Sans Japanese", sans-serif;
+	font-weight: 500;
+	font-size: 1.1em;
+	width: 100%;
+}
+
+.btnOver_b a {
+	background-color: #012F74;
+	display: block;
+	width: 350px;
+	color: #fff;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: auto;
+	margin-top: 20px;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.btnOver_b a:hover {
+    cursor:pointer;
+    filter: alpha(opacity=60);        /* ie lt 8 */
+    -ms-filter: "alpha(opacity=60)";  /* ie 8 */
+    -moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+    -khtml-opacity: 0.7;              /* Safari 1.x */
+    opacity:0.7;
+    zoom:1;
+	text-decoration: none;
+}

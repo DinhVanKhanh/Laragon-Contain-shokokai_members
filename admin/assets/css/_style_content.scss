@@ -1,0 +1,53 @@
+#table_idTest_wrapper{
+	background-color: #f3f4ed;
+	// #table_idTest_length{color: red; }
+	// #table_idTest_filter{ color: red;}
+}
+
+table{
+	&#table_idTest {
+	tr td{
+			vertical-align: middle;
+		 }
+	}	
+}
+
+.buttonLog {
+	/* background-color: #4CAF50; Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+
+	&:hover{
+		box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
+/* modal */	
+.modal-dialog {
+	min-height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: auto;
+}
+/* modal */	
+
+/* list error */
+.error {
+	&.error_inline0{
+		font-size: 140%;
+		display: inline-block;
+		text-align: left;
+	}
+}

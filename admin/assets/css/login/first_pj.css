@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+#Wrapper {
+min-height: 100vh;
+position: relative;/*←相対位置*/
+}
+
+#contents_first_pj {
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #cd3301;
+}
+
+#contents_first_pj .inner {
+	width: 500px;
+	height: auto;
+	margin: 0 auto 0 auto;
+	padding: 20px 0 50px 0;
+
+}
+
+.login_p {
+	font-family: "Noto Sans Japanese", sans-serif;
+	font-weight: 600;
+	text-align:center;
+	font-size:1.9rem;
+	margin:20px 0 50px 0;
+}
+
+
+#contents_first_pj h1 {
+	text-align: center;
+
+	font-family: "Noto Sans Japanese", sans-serif;
+	font-weight: 600;
+	font-size: 3.5rem;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #cd3301;
+}
+
+#contents_first_pj h2 {
+	text-align: center;
+
+	font-family: "Noto Sans Japanese", sans-serif;
+	font-weight: 600;
+	font-size: 3.5rem;
+	margin-bottom: 30px;
+	color: #cd3301;
+}
+
+#contents_first_pj .login {
+	border-radius: 5px;
+	border: 1px solid #CCCCCC;
+	padding: 20px;
+	height: 400px;
+	width: 460px;
+	position: absolute;
+	background-color: #FFF;
+}
