@@ -1,31 +1,12 @@
 # Ignore
 .history
 .vscode
-backup
-ChooseLink
-crawl
-data
-common_files
-hrm-laravel
-partner_new
-partner_new - Copy
-partner_sorimachi
-php-mvc
-QLnhansu-master
-test
-test_seminar
-Unitest
-wordpress-seo-premium-14.4.1
-www_sorimachi
-demo_php
-Contain1/member
 *.rar
 *.zip
 logs/
 *BK*
 *Copy*
 images/
-mag
 vendor
 *.gif
 *.png
@@ -38,22 +19,13 @@ vendor
 *.xlsx
 *.exe
 *.jar
-staff/wp-content/themes/twenty*
-# staff/wp-content/themes/twentytwenty
-# staff/wp-content/themes/twentytwentyone
-# staff/wp-content/themes/twentytwentytwo
 
 member/wp-content/languages
 
 !member/wp-content/themes
 member/wp-content/themes/*/
 !member/wp-content/themes/SSKCloud_Deisgn_theme/
-
-# autoload
-autoload/php-webdriver/*
-!autoload/php-webdriver/
-autoload/php-webdriver/*
-!autoload/php-webdriver/php-mvc-master/
+!member/wp-content/themes/SSKCloud_Deisgn_theme1/
 
 # config WP 
 # Wordpress - ignore core, configuration, examples, uploads and logs.
@@ -67,9 +39,7 @@ wp-admin/
 wp-content/index.php
 wp-content/languages/*
 wp-content/plugins/index.php
-wp-content/themes/index.php
 wp-includes/
-index.php
 license.txt
 readme.html
 wp-*.php

@@ -1,0 +1,350 @@
+@charset "utf-8";
+/*-----------------------------------------------------
+■HTML5 display definitions
+-----------------------------------------------------*/
+
+section, nav, article, aside, hgroup,
+header, footer, figure, figcaption, details {
+    display: block;
+}
+
+video, audio, canvas {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/*-----------------------------------------------------
+■Sections
+-----------------------------------------------------*/
+
+body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+}
+
+/*-----------------------------------------------------
+■Grouping content
+-----------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+p {
+	mardgin-right: 0;
+	text-justify: distribute;
+	padding: 0px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 1em;
+	margin-left: 0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+
+pre {
+    font-family: sans-serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+dl {
+    padding: 0;
+    margin: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+code, samp, kbd {
+    font-family: monospace, sans-serif;
+}
+
+mark {
+    color: black;
+    background-color: yellow;
+}
+
+sub, sup {
+    font-size: 0.83em;
+    line-height: 0;
+    vertical-align: baseline;
+    position: relative;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+br {
+	letter-spacing:normal;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+	text-align: right;
+	-ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+caption {
+    padding: 0;
+    text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+    text-align: left;
+    vertical-align: baseline;
+    padding: 0;
+}
+
+q:before,q:after {
+	content: '';
+}
+
+object,embed {
+	vertical-align: top;
+}
+
+legend {
+	display: none;
+}
+
+abbr,acronym,fieldset {
+	border: 0;
+}
+
+address {
+	font-style:normal;
+}
+
+/*-----------------------------------------------------
+■Form
+-----------------------------------------------------*/
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    border: 0;
+    *margin-left: -7px;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: 1em;
+    color: inherit;
+    margin: 0;
+}
+
+input, button {
+    line-height: normal;
+    vertical-align: inherit;
+    *vertical-align: middle;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+input[type="search"]:focus {
+    outline-offset: -2px;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+	vertical-align:middle;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    cursor: pointer;
+    -webkit-appearance: button;
+    *overflow: visible;
+	vertical-align:middle;
+}
+
+select {
+    background-color: inherit;
+    line-height: normal;
+}
+
+textarea {
+    vertical-align: top;
+    overflow: auto;
+    *font-family: sans-serif;
+}
+
+/*----------------------------------------------------
+■link color
+----------------------------------------------------*/
+
+a:link {
+	color: #0066CC;
+	text-decoration: none;
+	outline: none;
+}
+
+a:visited {
+	color: #0066CC;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: none;
+	outline: none;
+	color: #0066CC;
+}
+
+a:active {
+	color: #0066CC;
+	text-decoration: underline;
+	outline: none;
+}
+
+/* -----------------------------------------------------------
+■WEBfonts
+----------------------------------------------------------- */
+
+.clear-type {
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(1, 1.01);
+     -moz-transform-origin: 0 0;
+     -moz-transform: scale(1, 1.01);
+      -ms-transform-origin: 0 0;
+      -ms-transform: scale(1, 1.02); /* IE9だけ1.02 */
+       -o-transform-origin: 0 0;
+       -o-transform: scale(1, 1.01);
+}
+
+/*-----------------------------------------------------
+■clear
+-----------------------------------------------------*/
+
+.clear {
+	clear:both;
+}
+
+/*-----------------------------------------------------
+■clearfix
+-----------------------------------------------------*/
+
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display: table;
+}
+
+.clearfix:after{
+	clear:both;
+}
+
+/*IE6,7対策 （haslayout対策）*/
+.clearfix{
+	*zoom:1;
+}
+
+/* -----------------------------------------------------------
+■文字
+----------------------------------------------------------- */
+
+p.overflow {
+	overflow: hidden;
+}
+
+/* -----------------------------------------------------------
+■配置
+----------------------------------------------------------- */
+
+.img_rwd_r {
+	float:right;
+	margin-left:50px;
+	margin-bottom:20px;
+	overflow:auto; zoom:1;
+}
+
+.img_rwd_l {
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	overflow: auto;
+	zoom: 1;
+}
+
+.img_rwd_img_cent {
+	display:block;
+	padding-bottom:40px;
+	overflow:auto; zoom:1;
+	text-align:center;
+	margin:auto;
+}
