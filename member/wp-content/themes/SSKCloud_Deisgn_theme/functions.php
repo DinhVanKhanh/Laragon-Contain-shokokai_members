@@ -2,8 +2,11 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . "/common/functions.php";
 
 if (!is_wplogin() && !is_user_logged_in()) {
-	if (checkLogin("member") !== true)
-		redirect('/');
+	if (checkLogin("member") !== true) {
+		writeLogRequest(@$_SESSION["member"]["kikcd"], @$_SESSION["member"]["kiknm"], @$_SESSION["member"]["userid"], @$_SESSION["member"]["affiliationclss"], @$_SESSION["member"]["login"]);
+		redirect('/err.php');
+	} else
+		$_SESSION["member"]["timeout"] = time() + 3600;
 }
 
 function is_wplogin()
@@ -53,18 +56,10 @@ if (!function_exists('createInit')) {
 	add_action('init', 'createInit', 1);
 }
 
-// function logout()
-// {
-//   $_SESSION = [];
-//   session_destroy();
-//   echo "<script>location.href='" . "/" . "'</script>";
-//   exit();
-// }
-
 function logout()
 {
-	$_SESSION['member'] = [];
-	unset($_SESSION["member"]);
-	wp_redirect("/");
+	$_SESSION = [];
+	session_destroy();
+	echo "<script>location.href='" . "/" . "'</script>";
 	exit();
 }

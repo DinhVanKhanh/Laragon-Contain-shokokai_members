@@ -1,6 +1,11 @@
 <?php
-if (session_id() == '')	session_start();
-
+if (session_id() == '')
+	session_start();
+// echo php_uname() . '<br/>';
+// echo $_SERVER['HTTP_USER_AGENT'];
+// $output = shell_exec('systeminfo | findstr /C:"OS"');
+// print_r($output);
+// die();
 require_once $_SERVER['DOCUMENT_ROOT'] . "/common/functions.php";
 // ↓↓　<2022/04/06> <KhanhDinh> <insert function check login>
 if (!empty($_POST['next'])) {

@@ -1,9 +1,22 @@
 <?php
 // require_once $_SERVER['DOCUMENT_ROOT'] . "/common/functions.php";
 
+if ($_SERVER['SERVER_ADDR'] == '::1') {
+	if ($_GET["logout"] == "true") {
+		$_SESSION["member"] = [];
+		unset($_SESSION["member"]);
+		echo "<script>location.href='" . "/" . "'</script>";
+		exit();
+	}
+}
+
 // if (checkLogin("member") !== true)
-	// redirect('/');
-?> 
+// 	redirect('/');
+
+?>
+
+
+
 <?php get_header(); ?>
 
 <div id="contents_cms" class="clearfix">

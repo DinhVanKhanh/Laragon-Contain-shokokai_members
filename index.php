@@ -13,6 +13,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/common/functions.php";
 
 if (checkLogin("member") === true)
 	redirect('/member/');
+// ↓↓　<2022/19/04> <KhanhDinh> <comment code>
+// if(isset($_POST['next'])){
+// 	login("member");
+// }
+// ↑↑　<2022/19/04> <KhanhDinh> <comment code>
 ?>
 
 <!DOCTYPE html>
