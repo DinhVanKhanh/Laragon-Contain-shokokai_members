@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="true" stopOnFailure="false"
+>
+    <testsuites>
+    	<testsuite name="LAR_SHOKOKAI_MEMBERS12">
+        	<!-- <directory suffix="Test.php">tests</directory> -->
+        	<directory>tests</directory>
+			<!-- <file>tests/InstructorTest.php</file> -->
+		</testsuite>
+    </testsuites>
+
+    <!-- <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">app</directory>
+        </whitelist>
+    </filter> -->
+</phpunit>

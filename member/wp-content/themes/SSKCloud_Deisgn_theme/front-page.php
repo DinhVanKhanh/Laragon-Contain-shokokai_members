@@ -129,4 +129,7 @@ if (@$_SESSION["member"]["affiliationclss"] == "0")
 			?>
 	// 	location.href='/';
 	// }
+
+
 </script>
+

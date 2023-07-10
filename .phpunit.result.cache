@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"CalculatorTest::testSendMail2":0.009,"GuzzleHttp\\Tests\\TransferStatsTest::testHasData":33.488,"GuzzleHttp\\Tests\\ClientTest::testCanSendSynchronously":3.215}}

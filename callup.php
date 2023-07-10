@@ -18,6 +18,10 @@ $kikcd = $_POST["kikcd"] ?? "";
 $kiknm = $_POST["kiknm"] ?? "";
 $userid = $_POST["userid"] ?? "";
 $affiliationclss = $_POST["affiliationclss"] ?? "";
+// ↓↓　<2022/04/27> <KhanhDinh> <update 【HP合同PRJ】 SKK-Members-Site_LogOutFunction_211027.pptx>
+$usernm = $_POST["usernm"] ?? "";
+$email = $_POST["email"] ?? "";
+// ↑↑　<2022/04/27> <KhanhDinh> <update 【HP合同PRJ】 SKK-Members-Site_LogOutFunction_211027.pptx>
 
 if (!empty($_SERVER['HTTP_REFERER'])) {
 	$domain = parse_url($_SERVER['HTTP_REFERER'])['host'] ?? "";
@@ -35,11 +39,18 @@ $_SESSION["member"]["kikcd"]  = $kikcd;
 $_SESSION["member"]["kiknm"]  = $kiknm;
 $_SESSION["member"]["userid"] = $userid;
 $_SESSION["member"]["affiliationclss"] = in_array($affiliationclss, ["0", "1"]) ? $affiliationclss : "";
+// ↓↓　<2022/27/04> <KhanhDinh> <save usernm and email in session>
+$_SESSION["member"]["usernm"] = $usernm;
+$_SESSION["member"]["email"] = $email;
+// ↑↑　<2022/27/04> <KhanhDinh> <save usernm and email in session>
 $_SESSION["member"]["domain"] = $domain;
 $_SESSION["member"]["login"]  = false;
+
 if (
+	// ↓↓　<2022/27/04> <KhanhDinh> <insert check SESSION usernm>
 	!empty($_SESSION["member"]["kikcd"]) && !empty($_SESSION["member"]["kiknm"]) && !empty($_SESSION["member"]["userid"]) &&
-	strlen($_SESSION["member"]["affiliationclss"]) != 0 && !empty($_SESSION["member"]["domain"])
+	strlen($_SESSION["member"]["affiliationclss"]) != 0 && !empty($_SESSION["member"]["usernm"]) && !empty($_SESSION["member"]["domain"])
+	// ↑↑　<2022/27/04> <KhanhDinh> <insert check SESSION usernm>
 ) {
 	//if OK
 	$_SESSION["member"]["login"] = true;

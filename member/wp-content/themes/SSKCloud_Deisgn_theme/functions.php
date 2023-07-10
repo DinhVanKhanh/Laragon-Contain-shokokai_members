@@ -55,11 +55,20 @@ if (!function_exists('createInit')) {
 	}
 	add_action('init', 'createInit', 1);
 }
+// ↓↓　<2022/27/04> <KhanhDinh> <update function logout only logout for member(not for admin)>
+// function logout()
+// {
+// 	$_SESSION = [];
+// 	session_destroy();
+// 	echo "<script>location.href='" . "/" . "'</script>";
+// 	exit();
+// }
 
 function logout()
 {
-	$_SESSION = [];
-	session_destroy();
-	echo "<script>location.href='" . "/" . "'</script>";
+	$_SESSION['member'] = [];
+	unset($_SESSION["member"]);
+	wp_redirect("/");
 	exit();
 }
+// ↑↑　<2022/27/04> <KhanhDinh> <update function logout only logout for member(not for admin)>
